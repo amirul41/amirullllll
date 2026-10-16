@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio — Amirul</title>
+  <meta name="description" content="Personal portfolio: Student & Creative Digital Enthusiast." />
+
+  <!-- Font dari Google Fonts (butuh internet). Tanpa internet, browser memakai font cadangan. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <!-- =====================================================
+       HEADER / NAVIGASI
+       Ganti teks logo di bawah dengan nama panggilanmu.
+  ====================================================== -->
+  <header class="site-header" id="top">
+    <a href="#home" class="logo" aria-label="Kembali ke atas">Amirul<span>.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Navigasi utama">
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- =====================================================
+         A. HERO / COVER
+    ====================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-number" aria-hidden="true">01</div>
+      <div class="deco deco-circle-outline" aria-hidden="true"></div>
+      <div class="deco deco-dots" aria-hidden="true"></div>
+
+      <div class="hero-text reveal">
+        <span class="label"><i></i> PERSONAL PORTFOLIO</span>
+        <h1 class="display">CREATIVE<br /><em>PORTFOLIO.</em></h1>
+
+        <p class="hero-name"><div AMIRUL="" FADILAH="" ALFARIZI=""></div> &nbsp;/&nbsp; Amirul</p>
+        <p class="hero-tagline">“Turning Ideas Into Creative Digital Experiences.”</p>
+        <p class="hero-desc">
+          Student &amp; Creative Digital Enthusiast yang suka menjelajahi teknologi,
+          desain visual, dan pengembangan website.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">Lihat Karya <span aria-hidden="true">→</span></a>
+          <a href="#about" class="btn btn-ghost">Tentang Saya</a>
+        </div>
+      </div>
+
+      <!-- FOTO PROFIL (ganti file di images/profile.jpg) -->
+      <div class="hero-photo reveal" style="--d:.15s">
+        <div class="shape shape-square" aria-hidden="true"></div>
+        <div class="shape shape-circle" aria-hidden="true"></div>
+        <div class="photo-frame">
+          <img src="images/profile.jpg" alt="Foto profil Amirul" />
+        </div>
+        <span class="photo-tag" aria-hidden="true">Hello!</span>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         B. ABOUT ME
+    ====================================================== -->
+    <section class="section about" id="about">
+      <div class="bg-number" aria-hidden="true">02</div>
+
+      <div class="about-photo reveal">
+        <div class="photo-frame photo-frame--small">
+          <img src="images/profile.jpg" alt="Foto Amirul berseragam di depan bangunan putih" loading="lazy" />
+        </div>
+        <div class="shape shape-bar" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-text reveal" style="--d:.1s">
+        <span class="label"><i></i> ABOUT ME</span>
+        <h2 class="display h2">HELLO,<br />THAT'S <em>ME!</em></h2>
+        <p class="lead">
+          Saya <strong>Amirul</strong> — pribadi yang kreatif dan suka mempelajari hal baru.
+          Saya tertarik pada teknologi digital, ilmu logika, dan pengembangan website.
+        </p>
+        <p>
+          Saya senang mengeksplorasi ide, menyelesaikan masalah, dan menghasilkan karya yang bermanfaat.
+          Tujuan saya adalah terus belajar dan mengubah ide sederhana menjadi pengalaman digital yang rapi dan menarik.
+        </p>
+
+        <div class="info-cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎓</div>
+            <h3>Pendidikan</h3>
+            <p>Teknik Logistik — Universitas Pendidikan Indonesia (UPI)</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">✨</div>
+            <h3>Minat Utama</h3>
+            <p>Design Thinking, web, teknologi digital, dan ide kreatif</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         C. MY HOBBIES
+         Tambah/hapus hobi: salin satu <article class="card hobby"> lalu ubah isinya.
+    ====================================================== -->
+    <section class="section hobbies" id="hobbies">
+      <div class="bg-number" aria-hidden="true">03</div>
+      <div class="section-head reveal">
+        <span class="label"><i></i> MY HOBBIES</span>
+        <h2 class="display h2">THINGS I <em>LOVE.</em></h2>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card hobby reveal">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-1.7-1.3-3-3-3h-2a2 2 0 0 1-1.4-3.4A3 3 0 0 0 12 3Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Bereksperimen dengan warna, bentuk, dan tata letak.</p>
+        </article>
+
+        <article class="card hobby reveal" style="--d:.07s">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          </div>
+          <h3>Photography</h3>
+          <p>Menangkap momen dan sudut pandang yang menarik.</p>
+        </article>
+
+        <article class="card hobby reveal" style="--d:.14s">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>
+          </div>
+          <h3>Video Editing</h3>
+          <p>Merangkai klip menjadi cerita visual yang mengalir.</p>
+        </article>
+
+        <article class="card hobby reveal">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+          </div>
+          <h3>Music</h3>
+          <p>Mendengarkan musik untuk fokus dan mencari inspirasi.</p>
+        </article>
+
+        <article class="card hobby reveal" style="--d:.07s">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/><rect x="9" y="9" width="6" height="6"/></svg>
+          </div>
+          <h3>Technology Exploration</h3>
+          <p>Belajar teknologi dan alat digital baru.</p>
+        </article>
+
+        <article class="card hobby reveal" style="--d:.14s">
+          <div class="icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Membangun halaman web sederhana dengan HTML dan CSS.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         D. MY SKILLS
+         Level (data-level) = persen, hanya perkiraan pribadi. Hapus <div class="meter"> jika tidak mau pakai.
+    ====================================================== -->
+    <section class="section skills" id="skills">
+      <div class="bg-number" aria-hidden="true">04</div>
+      <div class="section-head reveal">
+        <span class="label"><i></i> MY SKILLS</span>
+        <h2 class="display h2">WHAT I <em>CAN DO.</em></h2>
+        <p class="note">Level di bawah adalah estimasi pribadi yang bisa kamu ubah sendiri.</p>
+      </div>
+
+      <div class="grid grid-3 skill-groups">
+        <article class="card skill-card reveal">
+          <h3><span class="dot"></span> Technical Skills</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-row"><span>HTML</span></div>
+              <div class="meter"><div class="meter-fill" data-level="70"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>CSS</span></div>
+              <div class="meter"><div class="meter-fill" data-level="60"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>JavaScript (dasar)</span></div>
+              <div class="meter"><div class="meter-fill" data-level="35"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Responsive Web Design</span></div>
+              <div class="meter"><div class="meter-fill" data-level="55"></div></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal" style="--d:.08s">
+          <h3><span class="dot"></span> Creative Skills</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-row"><span>Graphic Design</span></div>
+              <div class="meter"><div class="meter-fill" data-level="55"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Layout Composition</span></div>
+              <div class="meter"><div class="meter-fill" data-level="50"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Photo Editing</span></div>
+              <div class="meter"><div class="meter-fill" data-level="50"></div></div>
+            </li>
+            <li>
+              <div class="skill-row"><span>Video Editing</span></div>
+              <div class="meter"><div class="meter-fill" data-level="45"></div></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card skill-card reveal" style="--d:.16s">
+          <h3><span class="dot"></span> Personal Skills</h3>
+          <div class="chips">
+            <span class="chip">Creativity</span>
+            <span class="chip">Teamwork</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Self-Learning</span>
+            <span class="chip">UI/UX Thinking</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         E. PORTFOLIO / SELECTED PROJECTS
+         Ini adalah PROYEK CONTOH (placeholder). Ganti dengan karya aslimu.
+         Cara pasang gambar: ganti <div class="thumb ..."> dengan
+         <img src="images/nama-karya.jpg" alt="..."> di dalam <div class="project-thumb">.
+    ====================================================== -->
+    <section class="section portfolio" id="portfolio">
+      <div class="bg-number" aria-hidden="true">05</div>
+      <div class="section-head reveal">
+        <span class="label"><i></i> SELECTED PROJECTS</span>
+        <h2 class="display h2">MY <em>WORKS.</em></h2>
+        <p class="note">Tiga kartu di bawah adalah contoh tempat karya. Ganti dengan proyek aslimu.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="project reveal">
+          <div class="project-thumb">
+            <div class="thumb thumb-web" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="sample-badge">Contoh</span>
+          </div>
+          <div class="project-body">
+            <span class="category">Web Design</span>
+            <h3>Personal Profile Website</h3>
+            <p>Placeholder: halaman profil pribadi satu halaman dengan HTML, CSS, dan JavaScript.</p>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--d:.08s">
+          <div class="project-thumb">
+            <div class="thumb thumb-poster" aria-hidden="true">
+              <b>AaBb</b>
+            </div>
+            <span class="sample-badge">Contoh</span>
+          </div>
+          <div class="project-body">
+            <span class="category">Graphic Design</span>
+            <h3>Creative Poster Design</h3>
+            <p>Placeholder: poster dengan eksplorasi tipografi, warna, dan komposisi.</p>
+          </div>
+        </article>
+
+        <article class="project reveal" style="--d:.16s">
+          <div class="project-thumb">
+            <div class="thumb thumb-social" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <span class="sample-badge">Contoh</span>
+          </div>
+          <div class="project-body">
+            <span class="category">Social Media</span>
+            <h3>Social Media Design</h3>
+            <p>Placeholder: rangkaian konten feed dengan gaya visual yang konsisten.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         F. EDUCATION & EXPERIENCE (TIMELINE)
+         Tahun dan kegiatan bertanda [ ... ] adalah placeholder, silakan isi sendiri.
+    ====================================================== -->
+    <section class="section journey" id="journey">
+      <div class="bg-number" aria-hidden="true">06</div>
+      <div class="section-head reveal">
+        <span class="label"><i></i> EDUCATION &amp; EXPERIENCE</span>
+        <h2 class="display h2">MY <em>JOURNEY.</em></h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="time">[TAHUN] — Sekarang</span>
+          <div class="card">
+            <h3>Teknik Logistik</h3>
+            <p class="meta">Universitas Pendidikan Indonesia (UPI)</p>
+            <p>Mempelajari logistik, rantai pasok, dan optimasi.</p>
+          </div>
+        </li>
+        <li class="reveal" style="--d:.08s">
+          <span class="time">[TAHUN]</span>
+          <div class="card">
+            <h3>Himpunan Mahasiswa Teknik Logistik</h3>
+            <p class="meta">Ketua Dewan Perwakilan Mahasiswa</p>
+            <p>[Saya mempelajari kepemimpinan dan manajemen organisasi serta komunikasi efektif.]</p>
+          </div>
+        </li>
+        <li class="reveal" style="--d:.16s">
+          <span class="time">[TAHUN]</span>
+          <div class="card">
+            <h3>Proyek Pribadi &amp; Riset Mandiri</h3>
+            <p class="meta">Belajar mandiri</p>
+            <p>[Meneliti dan memahami konsep Cold chain logistics.]</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- =====================================================
+         G. CONTACT
+         Ganti href email, Instagram, dan GitHub di bawah ini.
+    ====================================================== -->
+    <section class="section contact" id="contact">
+      <div class="deco deco-circle-fill" aria-hidden="true"></div>
+      <div class="contact-inner reveal">
+        <span class="label label-light"><i></i> LET'S WORK TOGETHER</span>
+        <h2 class="display h2">LET'S CREATE<br /><em>SOMETHING GREAT!</em></h2>
+        <p>Punya ide, proyek, atau sekadar ingin menyapa? Hubungi saya lewat tautan berikut.</p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:EMAIL_amirulfadilahalfarizi@upi.edu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span>EMAIL_amirulfadilahalfarizi@upi.edu</span>
+          </a>
+          <a class="contact-link" href="https://instagram.com/alfariziiii25" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <span>@alfariziiii25</span>
+          </a>
+      
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       H. FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+    <div class="footer-brand">Amirul<span>.</span></div>
+    <nav class="footer-nav" aria-label="Navigasi footer">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="copyright">© <span id="year">2026</span> Amirul. All rights reserved.</p>
+  </footer>
+
+  <!-- Tombol kembali ke atas -->
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
